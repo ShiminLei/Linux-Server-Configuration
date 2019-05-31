@@ -10,6 +10,10 @@ The website can be visited on :
 
 [http://54.236.241.124/](http://54.236.241.124/)
 
+The project can be seen in :
+
+https://github.com/ShiminLei/Item-Catalog
+
 # Tasks
 
 #### Virtual Linux
