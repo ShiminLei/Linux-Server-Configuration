@@ -122,7 +122,8 @@ vagrant ssh
    
    # it is more secure to set ProhibitRootLogin to NO and be uncommented because a password can be brute forced
    cat /etc/ssh/sshd_config | egrep "PermitRootLogin"
-   # then uncommit #PermitRootLogin prohibit-password
+   # then change #PermitRootLogin prohibit-password
+   # to PermitRootLogin no
    ```
    
 ### Prepare to deploy your project.
