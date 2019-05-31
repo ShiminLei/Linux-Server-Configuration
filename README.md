@@ -102,6 +102,8 @@ vagrant ssh
 
 3. Create an SSH key pair for `grader` using the `ssh-keygen` tool
 
+   [link]([http://manpages.ubuntu.com/manpages/xenial/en/man5/sshd_config.5.html](http://manpages.ubuntu.com/manpages/xenial/en/man5/sshd_config.5.html)) about  PermitRootLogin.
+   
    ```bash
    # in locel /Users/leishimin/.ssh
    ssh-keygen
