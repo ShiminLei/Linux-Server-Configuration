@@ -42,6 +42,10 @@ vagrant ssh
    sudo apt-get update  # check if there any can be updated
    sudo apt-get upgrade # update 
    sudo apt-get autoremove  # remove redundant package
+   
+   # if the number of updated package if wrong, use
+   sudo aptitude update
+   sudo aptitude safe-upgrade
    ```
 
 2. Change the SSH port from **22** to **2200**. Make sure to configure the Lightsail firewall to allow it.
@@ -87,7 +91,7 @@ vagrant ssh
    sudo cp /etc/sudoers.d/90-cloud-init-users /etc/sudoers.d/grader
    sudo nano /etc/sudoers.d/grader   # change ubuntu to grader
    
-   # check is successful
+   # check if successful
    su grader
    sudo cat /etc/passwd 
    # 如果grader不是sudoer, 那么会报错：grader is not in the sudoers file.  This incident will be reported
@@ -113,6 +117,10 @@ vagrant ssh
    
    # now you can login grader with below:
    ssh -i .ssh/linuxCourse grader@54.236.241.124 -p 2200
+   
+   # it is more secure to set ProhibitRootLogin to NO and be uncommented because a password can be brute forced
+   cat /etc/ssh/sshd_config | egrep "PermitRootLogin"
+   # then uncommit #PermitRootLogin prohibit-password
    ```
    
 ### Prepare to deploy your project.
