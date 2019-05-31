@@ -38,6 +38,8 @@ vagrant ssh
 
 1. Update all currently installed packages
 
+   **Note**:  [link](https://serverfault.com/questions/262751/update-ubuntu-10-04/262773#262773) for wrong number of updated package
+
    ```bash
    sudo apt-get update  # check if there any can be updated
    sudo apt-get upgrade # update 
